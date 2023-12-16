@@ -39,11 +39,18 @@ After the preceding two steps are successfully run, if the result.png file is ge
 <p align="center"><img width="800" alt="image" src="https://github.com/haoshao-nku/medical_seg/blob/master/mmsegmentation/demo/result.jpg"></p> 
 
 **1. Dataset**
-The dataset used in the experiment can be obtained in the following methods:
+> The dataset used in the experiment can be obtained in the following methods:
 - For polyp segmentation task: [Polypseg](https://github.com/DengPingFan/PraNet): including Kvasir, - CVC-ClinicDB, CVC-ColonDB, EndoScene and ETIS dataset.
 - For abdominal multi-organ segmentation task: [Synapse](https://github.com/Beckschen/TransUNet).
 - For skin lesion segmentation task: [ISIC-2018](https://challenge.isic-archive.com/data/#2018).
 - For nuclei segmentation task: [DSB2018](https://www.kaggle.com/c/data-science-bowl-2018).
+
+**2. Experiments**
+We recommend that you place the project folder in a location such as a solid state drive, and put the checkpoint files generated from the experiment on a mechanical hard drive to save space, so you can choose to create a soft connection. Specific practices are as follows:
+
+> ln -s   "mechanical hard disk path"  /medical_seg/mmsegmentation/work_dirs
+
+If your hardware resources are relatively rich, ignore this advice.
 
 ## Our Work
 
