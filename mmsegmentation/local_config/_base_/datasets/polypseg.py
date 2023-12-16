@@ -1,5 +1,5 @@
 # dataset settings
-dataset_type = 'PolypSeg'
+dataset_type = 'MedicalUniversalDataset'
 data_root = "path"
 img_scale = (512,512)
 crop_size = (224,224)
