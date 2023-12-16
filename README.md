@@ -27,6 +27,7 @@ cd mmsegmentation
 pip install -v -e .
 pip install ftfy
 pip install regex
+pip install einops
 ```
 
 The following methods can be used to verify that the experimental environment is successfully set up:
@@ -95,7 +96,7 @@ Efficiently capturing multi-scale information and building long-range dependenci
 <p align="center">
     <img src="https://github.com/haoshao-nku/medical_seg/blob/master/fig/pipeline-MCANet.png"/> <br />
     <em> 
-    Figure 1: Overall architecture of the proposed \nameofmethod{}. We take the MSCAN network proposed in SegNeXt as our encoder because of its capability of capturing multi-scale features. The feature maps from the last three stages of the encoder are combined via upsampling and then concatenated as the input of the decoder. Our decoder is based on multi-scale cross-axis attention, which takes advantage of both multi-scale convolutional features and the axial attention.
+    Figure 1: Overall architecture of the proposed MCANet. We take the MSCAN network proposed in SegNeXt as our encoder because of its capability of capturing multi-scale features. The feature maps from the last three stages of the encoder are combined via upsampling and then concatenated as the input of the decoder. Our decoder is based on multi-scale cross-axis attention, which takes advantage of both multi-scale convolutional features and the axial attention.
     </em>
 </p>
 
