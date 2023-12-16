@@ -54,9 +54,9 @@ For nuclei segmentation task: [DSB2018](https://www.kaggle.com/c/data-science-bo
 We present a new boundary sensitive framework for polyp segmentation, called Polyper. Our method is motivated by a clinical approach that seasoned medical practitioners often leverage the inherent features of interior polyp regions to tackle blurred boundaries. Inspired by this, we propose explicitly leveraging polyp regions to bolster the model’s boundary discrimination capability while minimizing computation. Our approach first extracts boundary and polyp regions from the initial segmentation map through morphological operators. Then, we design the boundary sensitive attention that concentrates on augmenting the features near the boundary regions using the interior polyp regions’s characteristics to generate good segmentation results. Our proposed method can be seamlessly integrated with classical encoder networks, like ResNet-50, MiT-B1, and Swin Transformer. To evaluate the effectiveness of Polyper, we conduct experiments on five publicly available challenging datasets, and receive state-of-the-art performance on all of them.
 
 #### Architecture
-<p align="center"><img width="800" alt="image" src="https://github.com/haoshao-nku/medical_seg/blob/master/fig/pipline_polyper.pdf"></p> 
+<p align="center"><img width="800" alt="image" src="https://github.com/haoshao-nku/medical_seg/blob/master/fig/pipline_polyper.png"></p> 
 
-<p align="center"><img width="800" alt="image" src="https://github.com/haoshao-nku/medical_seg/blob/master/fig/refine_polyper.pdf"></p> 
+<p align="center"><img width="800" alt="image" src="https://github.com/haoshao-nku/medical_seg/blob/master/fig/refine_polyper.png"></p> 
 #### Experiments
 
 > For training, testing and other details can be found at **/medical_seg/mmsegmentation/local_config/Polyper-AAAI2024/readme.md**.
@@ -70,9 +70,9 @@ Efficiently capturing multi-scale information and building long-range dependenci
 
 #### Architecture
 
-<p align="center"><img width="800" alt="image" src="https://github.com/haoshao-nku/medical_seg/blob/master/fig/pipeline-MCANet.pdf"></p> 
+<p align="center"><img width="800" alt="image" src="https://github.com/haoshao-nku/medical_seg/blob/master/fig/pipeline-MCANet.png"></p> 
 
-<p align="center"><img width="800" alt="image" src="https://github.com/haoshao-nku/medical_seg/blob/master/fig/decoder-MCANet.pdf"></p> 
+<p align="center"><img width="800" alt="image" src="https://github.com/haoshao-nku/medical_seg/blob/master/fig/decoder-MCANet.png"></p> 
 
 #### Experiments
 
