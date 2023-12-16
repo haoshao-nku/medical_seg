@@ -1,6 +1,6 @@
 # dataset settings
 dataset_type = 'PolypSeg'
-data_root = "/root/siton-gpfs-archive/haoshao/data/medical_image_segmentation/Polyp_Segmentation_mmsegmentation/"'data/DRIVE'
+data_root = "path"
 img_scale = (512,512)
 crop_size = (224,224)
 train_pipeline = [
@@ -52,8 +52,8 @@ train_dataloader = dict(
             type=dataset_type,
             data_root=data_root,
             data_prefix=dict(
-                img_path="/root/siton-gpfs-archive/haoshao/data/medical_image_segmentation/Polyp_Segmentation_mmsegmentation/TrainDataset/image/",
-                seg_map_path="/root/siton-gpfs-archive/haoshao/data/medical_image_segmentation/Polyp_Segmentation_mmsegmentation/TrainDataset/mask/"),
+                img_path="path",
+                seg_map_path="path"),
             pipeline=train_pipeline)))
 val_dataloader = dict(
     batch_size=1,
@@ -64,12 +64,11 @@ val_dataloader = dict(
         type=dataset_type,
         data_root=data_root,
         data_prefix=dict(
-            img_path="/root/siton-gpfs-archive/haoshao/data/medical_image_segmentation/Polyp_Segmentation_mmsegmentation/TestDataset/TestDataset/Kvasir/images/",
-            seg_map_path="/root/siton-gpfs-archive/haoshao/data/medical_image_segmentation/Polyp_Segmentation_mmsegmentation/TestDataset/TestDataset/Kvasir/mask/"),
+            img_path="path",
+            seg_map_path="path"),
         pipeline=test_pipeline))
 test_dataloader = val_dataloader
 
 val_evaluator = dict(type='IoUMetric', iou_metrics=['mDice'])
 test_evaluator = val_evaluator
 
-#CVC-ColonDB  CVC-ClinicDB Kvasir ETIS-LaribPolypDB CVC-300

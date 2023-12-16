@@ -1,6 +1,6 @@
 # dataset settings
 dataset_type = 'PolypSeg'
-data_root = "/root/siton-gpfs-archive/haoshao/data/medical_image_segmentation/Polyp_Segmentation_mmsegmentation/"
+data_root = "set_your_path"
 img_scale = (512,512)
 crop_size = (256,256)
 train_pipeline = [
@@ -52,8 +52,8 @@ train_dataloader = dict(
             type=dataset_type,
             data_root=data_root,
             data_prefix=dict(
-                img_path="/root/siton-gpfs-archive/haoshao/data/medical_image_segmentation/Polyp_Segmentation_mmsegmentation/TrainDataset/image/",
-                seg_map_path="/root/siton-gpfs-archive/haoshao/data/medical_image_segmentation/Polyp_Segmentation_mmsegmentation/TrainDataset/mask/"),
+                img_path="set_your_path",
+                seg_map_path="set_your_path"),
             pipeline=train_pipeline)))
 val_dataloader = dict(
     batch_size=1,
@@ -64,8 +64,8 @@ val_dataloader = dict(
         type=dataset_type,
         data_root=data_root,
         data_prefix=dict(
-            img_path="/root/siton-gpfs-archive/haoshao/data/medical_image_segmentation/Polyp_Segmentation_mmsegmentation/TestDataset/TestDataset/Kvasir/images/",
-            seg_map_path="/root/siton-gpfs-archive/haoshao/data/medical_image_segmentation/Polyp_Segmentation_mmsegmentation/TestDataset/TestDataset/Kvasir/mask/"),
+            img_path="set_your_path",
+            seg_map_path="set_your_path"),
         pipeline=test_pipeline))
 test_dataloader = val_dataloader
 
