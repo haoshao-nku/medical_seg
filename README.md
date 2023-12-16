@@ -39,7 +39,7 @@ After the preceding two steps are successfully run, if the result.png file is ge
 <p align="center"><img width="800" alt="image" src="https://github.com/haoshao-nku/medical_seg/blob/master/mmsegmentation/demo/result.jpg"></p> 
 
 **1. Dataset**
-- The dataset used in the experiment can be obtained in the following methods:
+The dataset used in the experiment can be obtained in the following methods:
 - For polyp segmentation task: [Polypseg](https://github.com/DengPingFan/PraNet): including Kvasir, - CVC-ClinicDB, CVC-ColonDB, EndoScene and ETIS dataset.
 - For abdominal multi-organ segmentation task: [Synapse](https://github.com/Beckschen/TransUNet).
 - For skin lesion segmentation task: [ISIC-2018](https://challenge.isic-archive.com/data/#2018).
