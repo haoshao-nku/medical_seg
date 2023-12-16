@@ -41,6 +41,8 @@ Please confirm whether you are currently under the mmsegmentation directory. If 
 
 - python tools/train.py /medical_seg/mmsegmentation/local_config/Polyper-AAAI2024/main/polyper_polypseg_224*224_80k.py
 
+> During training, verification is performed every 8,000 iterations, and the checkpoint file is saved at the same time. The batch size and validation set evaluation indicators can be changed in **/medical_seg/mmsegmentation/local_config/Polyper-AAAI2024/main/polyper_polypseg_224*224_80k.py**.
+
 ### Testing
 
 The log files and checkpoint files of the training process are saved in /medical_seg/mmsegmentation/work_dirs/polyper_polypseg_224*224_80k/. The command to test the model is as follows:
@@ -49,4 +51,12 @@ The log files and checkpoint files of the training process are saved in /medical
 
 >  You can replace iter_80000.pth to evaluate the performance of different checkpoints. Similarly, you can replace mIoU and use different evaluation indicators to evaluate the model.
 
-> The evaluation indicators supported by mmsegmentation can be found in 
+> The evaluation indicators supported by mmsegmentation can be found in **/medical_seg/mmsegmentation/mmseg/evaluation/metrics**.
+
+### Calculate the Flops and parameters：
+Please run the following command:
+- python tools/get_flops /home/ubuntu/scholar_learning_project/medical_seg/mmsegmentation/local_config/Polyper-AAAI2024/main/polyper_polypseg_224*224_80k.py --shape 512 512
+
+> You can calculate it by replacing "512 512" with the image size you want.
+> You can replace the configuration files to evaluate flops and parameters for different networks.
+
