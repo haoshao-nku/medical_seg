@@ -53,10 +53,23 @@ The log files and checkpoint files of the training process are saved in /medical
 
 > The evaluation indicators supported by mmsegmentation can be found in **/medical_seg/mmsegmentation/mmseg/evaluation/metrics**.
 
-### Calculate the Flops and parameters：
+### Calculate the Flops and Parameters
 Please run the following command:
 - python tools/get_flops /home/ubuntu/scholar_learning_project/medical_seg/mmsegmentation/local_config/Polyper-AAAI2024/main/polyper_polypseg_224*224_80k.py --shape 512 512
 
 > You can calculate it by replacing "512 512" with the image size you want.
 > You can replace the configuration files to evaluate flops and parameters for different networks.
 
+### Ablation Study
+
+If you want to perform ablation experiments, we recommend that you do so as follows:
+
+- 1.Create a new file in the /mmsegmentation/mmseg/models/decode_heads directory, for example, name it ablation.py. The ablation experiment can be modified by referring to /mmsegmentation/mmseg/models/decode_heads/polyper.py. For example, you can change ablation.py The function inside is named "Ablationhead".
+
+- 2.Add your newly created function name "Ablationhead" to the __init__.py file in the /mmsegmentation/mmseg/models/decode_heads directory. You can refer to polyper to add it.
+
+- 3.After the addition is completed, run **python setup.py install** in the command windows.
+
+- 4.Create a new python file in the /mmsegmentation/local_config/Polyper-AAAI2024/main folder. You can use the settings of /mmsegmentation/local_config/Polyper-AAAI2024/main/polyper_polypseg_224*224_80k.py and replace the type parameter of decode_head. into your new head, such as "Ablationhead".
+
+> You can also refer to [mmsegmentation](https://mmsegmentation.readthedocs.io/zh-cn/latest/) of "自定义组件/新增模块" to make changes. We implement it based on mmsegmentation. It is recommended that you read [mmsegmentation](https://mmsegmentation.readthedocs.io/zh-cn/latest/) for a better understanding.
