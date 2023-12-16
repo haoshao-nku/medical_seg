@@ -72,9 +72,24 @@ Efficiently capturing multi-scale information and building long-range dependenci
 
 #### Architecture
 
-<p align="center"><img width="800" alt="image" src="https://github.com/haoshao-nku/medical_seg/blob/master/fig/pipeline-MCANet.png"></p> 
 
-<p align="center"><img width="800" alt="image" src="https://github.com/haoshao-nku/medical_seg/blob/master/fig/decoder-MCANet.png"></p> 
+
+<p align="center">
+    <img src="https://github.com/haoshao-nku/medical_seg/blob/master/fig/pipeline-MCANet.png"/> <br />
+    <em> 
+    Figure 1: Overall architecture of the proposed \nameofmethod{}. We take the MSCAN network proposed in [SegNeXt](https://arxiv.org/pdf/2209.08575.pdf) as our encoder because of its capability of capturing multi-scale features. The feature maps from the last three stages of the encoder are combined via upsampling and then concatenated as the input of the decoder. Our decoder is based on multi-scale cross-axis attention, which takes advantage of both multi-scale convolutional features and the axial attention.
+    </em>
+</p>
+
+
+
+<p align="center">
+    <img src="imgs/qualitative_results.png](https://github.com/haoshao-nku/medical_seg/blob/master/fig/decoder-MCANet.png)"/> <br />
+    <em> 
+    Figure 2: Detailed structure of the proposed multi-scale cross-axis attention decoder. Our decoder contains two parallel paths, each of which contains multi-scale 1D convolutions and cross-axis attention to aggregate the spatial information. Note that we do not add any activation functions in decoder.
+    </em>
+</p>
+
 
 #### Experiments
 
