@@ -57,6 +57,8 @@ We present a new boundary sensitive framework for polyp segmentation, called Pol
 <p align="center"><img width="800" alt="image" src="https://github.com/haoshao-nku/medical_seg/blob/master/fig/pipline_polyper.png"></p> 
 
 <p align="center"><img width="800" alt="image" src="https://github.com/haoshao-nku/medical_seg/blob/master/fig/refine_polyper.png"></p> 
+
+
 #### Experiments
 
 > For training, testing and other details can be found at **/medical_seg/mmsegmentation/local_config/Polyper-AAAI2024/readme.md**.
