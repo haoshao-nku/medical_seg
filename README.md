@@ -7,6 +7,8 @@
 
 
 ## 🌤️ Highlights
+- (2023.12.16) The code of [MCANet: Medical Image Segmentation with Multi-Scale Cross-Axis Attention](https://arxiv.org/abs/2312.08866) release.
+- (2023.12.16) The code of [Polyper: Boundary Sensitive Polyp Segmentation](https://arxiv.org/abs/2312.08735) release.
 - (2023.12.15) Our paper "**Polyper: Boundary Sensitive Polyp Segmentation**" was accepted by AAAI2024, We have released article on [arXiv](https://arxiv.org/abs/2312.08735).
 - (2023.12.15) We have released article on arXiv: [MCANet: Medical Image Segmentation with Multi-Scale Cross-Axis Attention](https://arxiv.org/abs/2312.08866).
 
@@ -52,6 +54,8 @@ We recommend that you place the project folder in a location such as a solid sta
 > ln -s   "mechanical hard disk path"  /medical_seg/mmsegmentation/work_dirs
 
 If your hardware resources are relatively rich, ignore this advice.
+
+> **Note: Our experiment is implemented based on [mmsegmentation](https://github.com/open-mmlab/mmsegmentation). The environment configuration can also refer to the [mmsegmentation](https://github.com/open-mmlab/mmsegmentation), and questions about the entire project can refer to the [official documentation](https://mmsegmentation.readthedocs.io/zh-cn/latest/).**
 
 ## Our Work
 
@@ -113,6 +117,11 @@ Efficiently capturing multi-scale information and building long-range dependenci
 #### Experiments
 
 > For training, testing and other details can be found at **/medical_seg/mmsegmentation/local_config/MCANet/readme.md**.
+
+
+## Acknowlegement
+
+Thanks [mmsegmentation](https://github.com/open-mmlab/mmsegmentation) providing a friendly codebase for segmentation tasks. And our code is built based on it.
 
 ## Reference
 You may want to cite:
