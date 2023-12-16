@@ -30,14 +30,23 @@ We present a new boundary sensitive framework for polyp segmentation, called Pol
 
 ## Experiments
 
-### Training
+### Change dataset path
 
-> python tools/train.py /medical_seg/mmsegmentation/local_config/Polyper-AAAI2024/main/polyper_kvasir_224*224_80k.py
+- 1.Download the [Polypseg](https://github.com/DengPingFan/PraNet) dataset, then decompress the dataset.
+- 2.Update the training path and test path of **/medical_seg/mmsegmentation/local_config/_base_/datasets/polypseg.py** in the project, on lines 55, 56, 67, and 68 respectively.
+> We recommend using absolute paths instead of relative paths when updating paths of dataset.
+
+### Training
+Please confirm whether you are currently under the mmsegmentation directory. If not, please enter the mmsegmentation directory. Then run the following code in terminal:
+
+- python tools/train.py /medical_seg/mmsegmentation/local_config/Polyper-AAAI2024/main/polyper_polypseg_224*224_80k.py
 
 ### Testing
 
-> python tools/test.py  /medical_seg/mmsegmentation/local_config/Polyper-AAAI2024/main/polyper_kvasir_224*224_80k.py  /medical_seg/mmsegmentation/work_dirs/polyper_kvasir_224*224_80k/iter_80000.pth --eval mIoU
+The log files and checkpoint files of the training process are saved in /medical_seg/mmsegmentation/work_dirs/polyper_polypseg_224*224_80k/. The command to test the model is as follows:
 
->  You can change the evaluation indicators as follows:
+- python tools/test.py  /medical_seg/mmsegmentation/local_config/Polyper-AAAI2024/main/polyper_polypseg_224*224_80k.py  /medical_seg/mmsegmentation/work_dirs/polyper_polypseg_224*224_80k/iter_80000.pth --eval mIoU
+
+>  You can replace iter_80000.pth to evaluate the performance of different checkpoints. Similarly, you can replace mIoU and use different evaluation indicators to evaluate the model.
 
 > The evaluation indicators supported by mmsegmentation can be found in 
