@@ -1,7 +1,7 @@
 # <p align=center>`Polyper: Boundary Sensitive Polyp Segmentation`</p>
 
 > **Authors:**
-> [Hao Shao](https://scholar.google.com/citations?hl=en&user=vB4DPYgAAAAJ), [yang Zhang](), &[Qibin Hou](https://scholar.google.com/citations?user=fF8OFV8AAAAJ&hl=en&oi=ao).
+> [Hao Shao](https://scholar.google.com/citations?hl=en&user=vB4DPYgAAAAJ), [Yang Zhang](), &[Qibin Hou](https://scholar.google.com/citations?user=fF8OFV8AAAAJ&hl=en&oi=ao).
 
 
 

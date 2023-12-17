@@ -62,7 +62,7 @@ If your hardware resources are relatively rich, ignore this advice.
 ### [Polyper: Boundary Sensitive Polyp Segmentation](https://arxiv.org/abs/2312.08735) AAAI 2024
 
 > **Authors:**
-> [Hao Shao](https://scholar.google.com/citations?hl=en&user=vB4DPYgAAAAJ), [yang Zhang](), &[Qibin Hou](https://scholar.google.com/citations?user=fF8OFV8AAAAJ&hl=en&oi=ao).
+> [Hao Shao](https://scholar.google.com/citations?hl=en&user=vB4DPYgAAAAJ), [Yang Zhang](), &[Qibin Hou](https://scholar.google.com/citations?user=fF8OFV8AAAAJ&hl=en&oi=ao).
 
 #### **Abstract**
 
