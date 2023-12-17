@@ -1,7 +1,7 @@
 # <p align=center>`Medical Image Segmentation`</p>
 
 
-:fire::fire: This is a official repository of our work on medical image segmentation:fire::fire:
+:fire::fire: This is an official repository of our work on medical image segmentation.:fire::fire:
 
 > If you have any questions about our work, feel free to contact me via e-mail (shaoh@mail.nankai.edu.cn).
 
