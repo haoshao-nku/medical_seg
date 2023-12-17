@@ -65,7 +65,7 @@ Please confirm whether you are currently under the mmsegmentation directory. If 
 
 ### Calculate the Flops and Parameters
 Please run the following command:
-- python /home/ubuntu/scholar_learning_project/medical_seg/mmsegmentation/local_config/MCANet/main/MCANet_mscsn_t_polypseg_512*512_80k.py --shape 512 512
+- python /medical_seg/mmsegmentation/local_config/MCANet/main/MCANet_mscsn_t_polypseg_512*512_80k.py --shape 512 512
 
 > You can calculate it by replacing "512 512" with the image size you want.
 > You can replace the configuration files to evaluate flops and parameters for different networks.

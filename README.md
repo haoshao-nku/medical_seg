@@ -61,6 +61,9 @@ If your hardware resources are relatively rich, ignore this advice.
 
 ### [Polyper: Boundary Sensitive Polyp Segmentation](https://arxiv.org/abs/2312.08735) AAAI 2024
 
+> **Authors:**
+> [Hao Shao](https://scholar.google.com/citations?hl=en&user=vB4DPYgAAAAJ), [yang Zhang](), &[Qibin Hou](https://scholar.google.com/citations?user=fF8OFV8AAAAJ&hl=en&oi=ao).
+
 #### **Abstract**
 
 We present a new boundary sensitive framework for polyp segmentation, called Polyper. Our method is motivated by a clinical approach that seasoned medical practitioners often leverage the inherent features of interior polyp regions to tackle blurred boundaries. Inspired by this, we propose explicitly leveraging polyp regions to bolster the model’s boundary discrimination capability while minimizing computation. Our approach first extracts boundary and polyp regions from the initial segmentation map through morphological operators. Then, we design the boundary sensitive attention that concentrates on augmenting the features near the boundary regions using the interior polyp regions’s characteristics to generate good segmentation results. Our proposed method can be seamlessly integrated with classical encoder networks, like ResNet-50, MiT-B1, and Swin Transformer. To evaluate the effectiveness of Polyper, we conduct experiments on five publicly available challenging datasets, and receive state-of-the-art performance on all of them.
@@ -87,6 +90,9 @@ We present a new boundary sensitive framework for polyp segmentation, called Pol
 > For training, testing and other details can be found at **/medical_seg/mmsegmentation/local_config/Polyper-AAAI2024/readme.md**.
 
 ### [MCANet: Medical Image Segmentation with Multi-Scale Cross-Axis Attention](https://arxiv.org/abs/2312.08866)
+
+> **Authors:**
+> [Hao Shao](https://scholar.google.com/citations?hl=en&user=vB4DPYgAAAAJ), [Quansheng Zeng](), [Qibin Hou](https://scholar.google.com/citations?user=fF8OFV8AAAAJ&hl=en&oi=ao), &[Jufeng Yang](https://scholar.google.com/citations?user=c5vDJv0AAAAJ&hl=en&oi=ao).
 
 #### **Abstract**
 
