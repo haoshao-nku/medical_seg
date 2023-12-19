@@ -132,7 +132,19 @@ Thanks [mmsegmentation](https://github.com/open-mmlab/mmsegmentation) providing 
 ## Reference
 You may want to cite:
 ```
+@article{shao2023polyper,
+  title={Polyper: Boundary Sensitive Polyp Segmentation},
+  author={Shao, Hao and Zhang, Yang and Hou, Qibin},
+  journal={arXiv preprint arXiv:2312.08735},
+  year={2023}
+}
 
+@article{shao2023mcanet,
+  title={MCANet: Medical Image Segmentation with Multi-Scale Cross-Axis Attention},
+  author={Shao, Hao and Zeng, Quansheng and Hou, Qibin and Yang, Jufeng},
+  journal={arXiv preprint arXiv:2312.08866},
+  year={2023}
+}
 ```
 
 ### License
