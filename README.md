@@ -7,8 +7,9 @@
 
 
 ## 🌤️ Highlights
+- (2025.02.18) The Jittor vsersion implementation of  [Polyper: Boundary Sensitive Polyp Segmentation](https://ojs.aaai.org/index.php/AAAI/article/view/28274) is available at Jittor Version !!!
 - (2023.12.16) The code of [MCANet: Medical Image Segmentation with Multi-Scale Cross-Axis Attention](https://arxiv.org/abs/2312.08866) release.
-- (2023.12.16) The code of [Polyper: Boundary Sensitive Polyp Segmentation](https://arxiv.org/abs/2312.08735) release.
+- (2023.12.16) The code of [Polyper: Boundary Sensitive Polyp Segmentation](https://ojs.aaai.org/index.php/AAAI/article/view/28274) release.
 - (2023.12.15) Our paper "**Polyper: Boundary Sensitive Polyp Segmentation**" was accepted by AAAI2024, We have released article on [arXiv](https://arxiv.org/abs/2312.08735).
 - (2023.12.15) We have released article on arXiv: [MCANet: Medical Image Segmentation with Multi-Scale Cross-Axis Attention](https://arxiv.org/abs/2312.08866).
 
@@ -132,11 +133,14 @@ Thanks [mmsegmentation](https://github.com/open-mmlab/mmsegmentation) providing 
 ## Reference
 You may want to cite:
 ```
-@article{shao2023polyper,
+@inproceedings{shao2024polyper,
   title={Polyper: Boundary Sensitive Polyp Segmentation},
   author={Shao, Hao and Zhang, Yang and Hou, Qibin},
-  journal={arXiv preprint arXiv:2312.08735},
-  year={2023}
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume={38},
+  number={5},
+  pages={4731--4739},
+  year={2024}
 }
 
 @article{shao2023mcanet,
@@ -146,6 +150,9 @@ You may want to cite:
   year={2023}
 }
 ```
+
+
+
 
 ### License
 
