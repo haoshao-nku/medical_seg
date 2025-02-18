@@ -7,7 +7,7 @@
 
 
 ## 🌤️ Highlights
-- (2025.02.18) The Jittor vsersion implementation of  [Polyper: Boundary Sensitive Polyp Segmentation](https://ojs.aaai.org/index.php/AAAI/article/view/28274) is available at Jittor Version !!!
+- (2025.02.18) The Jittor vsersion implementation of  [Polyper: Boundary Sensitive Polyp Segmentation](https://ojs.aaai.org/index.php/AAAI/article/view/28274) is available at [Jittor Version](https://github.com/haoshao-nku/medical_seg_jittor.git) !!!
 - (2023.12.16) The code of [MCANet: Medical Image Segmentation with Multi-Scale Cross-Axis Attention](https://arxiv.org/abs/2312.08866) release.
 - (2023.12.16) The code of [Polyper: Boundary Sensitive Polyp Segmentation](https://ojs.aaai.org/index.php/AAAI/article/view/28274) release.
 - (2023.12.15) Our paper "**Polyper: Boundary Sensitive Polyp Segmentation**" was accepted by AAAI2024, We have released article on [arXiv](https://arxiv.org/abs/2312.08735).
